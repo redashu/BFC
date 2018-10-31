@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+
+metadata:
+ name: ngidev
+spec:
+ replicas: 3
+ template:
+  metadata:
+   labels:
+    app: adhocdep-dev
+
+  spec:
+   containers:
+    - name: web2-dev
+      image: nginx
+      ports:
+       - containerPort: 80
+      imagePullPolicy: IfNotPresent

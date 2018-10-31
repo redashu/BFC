@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: webnginxpod1
+ labels:
+  app: adhoc
+
+spec:
+ containers:
+  - name: web2
+    image: nginx
+    ports:
+     - containerPort: 80
+    imagePullPolicy: IfNotPresent
