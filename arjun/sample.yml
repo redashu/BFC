@@ -1,0 +1,12 @@
+---
+apiversion: v1
+kind: Pod # this is for single container based app
+metadata:
+ name: avpod1
+
+spec:
+ containers:
+  - name: avcont1
+    image: nginx
+    ports:
+     - containerPort: 80

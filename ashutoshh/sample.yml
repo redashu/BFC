@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod  # this is for single container based app
+metadata:
+ name: ashupod1
+
+
+spec:
+ containers:
+  - name: ashucont1
+    image: nginx
+    ports:
+     - containerPort: 80
+
+

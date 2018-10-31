@@ -1,0 +1,16 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment  # this is for multi container based app
+
+metadata:
+ name: ashudep1
+
+
+spec:
+ containers:
+  - name: ashucont1
+    image: nginx
+    ports:
+     - containerPort: 80
+
+

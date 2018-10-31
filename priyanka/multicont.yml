@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+ name: pripod1
+
+
+spec: 
+ containers: 
+  - name: pricont1
+    image: nginx
+    ports: 
+     - containerPort: 80 

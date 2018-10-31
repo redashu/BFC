@@ -1,0 +1,14 @@
+---
+
+apiVersion: v1
+kind: Pod  #This is single container based app
+metadata: 
+ name: mysamplepod
+
+
+spec:
+ containers: 
+ - name: jithcont1
+   image: nginx
+   ports:
+    - containerPort: 80
